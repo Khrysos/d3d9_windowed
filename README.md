@@ -1,18 +1,9 @@
 <p align="center">
   <h1 align="center">d3d9_windowed</h1>
   <p align="center">
-    A lightweight Direct3D9 proxy DLL for windowed / borderless behavior (focused on Prince of Persia: Warrior Within).
+    A lightweight Direct3D9 proxy DLL for windowed / borderless behavior.
   </p>
 </p>
-
-<p align="center">
-  <!-- Optional badges (edit links) -->
-  <a href="[REPO_URL]"><img alt="license" src="https://img.shields.io/badge/license-[MIT|GPL|etc]-informational"></a>
-  <a href="[REPO_URL]/releases"><img alt="release" src="https://img.shields.io/badge/releases-coming-soon"></a>
-  <img alt="platform" src="https://img.shields.io/badge/platform-Windows-blue">
-  <img alt="arch" src="https://img.shields.io/badge/arch-x86-blueviolet">
-</p>
-
 ---
 
 ## What this does
