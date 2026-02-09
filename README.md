@@ -39,8 +39,6 @@ Delete `d3d9.dll`  and `preferences.ini` from your EXE folder
 3. Build:
    - `Build → Build Solution`
 
-> Output location depends on your project settings. If you set a unified output folder, document it here.
-
 ---
 
 ## Troubleshooting
