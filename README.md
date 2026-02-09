@@ -8,22 +8,21 @@
 ---
 
 ## What this does
-- ✅ Forces **windowed / borderless** behavior for Direct3D9 games
-- ✅ Helps with **alt-tab / focus** behavior (depending on game)
-- ✅ [Add/remove bullets based on what your DLL actually does]
+- Forces **windowed / borderless** behavior for Direct3D9 games
+- Ignores "focus-lost" behaviour
+- Disables mouse-clipping 
 
 > This project is intended to be **non-invasive**: it does not modify game files beyond placing a proxy DLL next to the executable.
 
 ---
 
-## Install (drop-in)
-1. Build the DLL (see **Build** below)
-2. Copy the output DLL into the same folder as the game EXE
-3. Rename the DLL to `d3d9.dll` **if your game expects a D3D9 proxy**
+## Installation (drop-in)
+1. **Download** or **Build** the DLL (see **Build** below)
+2. Copy `d3d9.dll` and `preferences.ini` into the same folder as the game EXE
 4. Launch the game
 
 ### Uninstall
-Delete the `d3d9.dll` you added (and any config file you created).
+Delete `d3d9.dll`  and `preferences.ini` from your EXE folder
 
 ---
 
@@ -44,41 +43,13 @@ Delete the `d3d9.dll` you added (and any config file you created).
 
 ---
 
-## Configuration
-If you have config toggles, document them here. Example:
-
-- `BORDERLESS=1`
-- `ALLOW_RESIZE=1`
-- `IGNORE_FOCUS_LOSS=1`
-
-(If you don’t have a config file yet, delete this section.)
-
----
-
-## Compatibility notes
-- ✅ Tested: Prince of Persia: Warrior Within (Steam)
-- ✅ Likely compatible: many Direct3D9 titles
-- ⚠️ Some games may behave differently depending on how they create their window/device.
-
----
-
 ## Troubleshooting
-### Game doesn’t start / crashes immediately
+### Nothing changes in-game
 - Confirm the DLL is next to the **correct** game EXE
 - Ensure you built **x86** for 32-bit games
-- Try removing overlays (Discord/RTSS) to test
-
-### Nothing changes in-game
-- The game may not be loading your proxy DLL
-- Confirm the proxy filename should be `d3d9.dll` for this title
+- Confirm the dll filename is `d3d9.dll`
 
 ---
 
 ## Credits
-- Uses **MinHook** (vendored in `third_party/minhook`). See its license in that folder.
-- [Any other libraries/tools]
-
----
-
-## License
-[Your license choice here]
+- Uses **MinHook** (`third_party/minhook`). See its license in that folder.
