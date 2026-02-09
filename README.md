@@ -4,6 +4,7 @@
     A lightweight Direct3D9 proxy DLL for windowed / borderless behavior.
   </p>
 </p>
+
 ---
 
 ## What this does
