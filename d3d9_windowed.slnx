@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="d3d9_windowed/d3d9_windowed.vcxproj" />
+  <Project Path="d3d9_windowed/d3d9_windowed.vcxproj" Id="930c9d45-b380-46da-a452-997e2ae649e4" />
 </Solution>
